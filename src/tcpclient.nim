@@ -1,3 +1,5 @@
+# nim c -d:ssl -r src/tcpclient.nim
+
 import strutils
 import std/[net, nativesockets]
 
@@ -34,6 +36,4 @@ while true:
 
 echo message
 echo "---------="
-echo res # responseをどうやって受け取ればいいかわからない。。。
-
-
+echo res
